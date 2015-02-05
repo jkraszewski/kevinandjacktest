@@ -1,10 +1,11 @@
-import System.util.Scanner;
+import java.util.Scanner;
 
-private Array[][] board = new Array[2][2];
+
 public class TicTackToe
 {
 	public static void main(String[] args)
 	{
+		String[][] board = new String[3][3];
 		Scanner scan = new Scanner(System.in);
 		int guess;
 		boolean won = false;
@@ -19,18 +20,23 @@ public class TicTackToe
 		while(!won)
 		{
 
-			print();
-			System.out.println("Enter location with the row and column number.";
+			printThis(board);
+			System.out.println("Enter location with the row and column number.");
 		}
 
 	}
 
-	public void print(Array[][] board)
+	public void printThis(String[][] board)
 	{
+		for (int i = 0; i < board.length; i++)
+			{
+				for (int j = 0; i <board.length; i++)
+					System.out.print(board[i][j]);
+			}
 
 	}
 
-	public void checkBoard(Array[][] board)
+	public void checkBoard(String[][] board)
 	{
 
 	}
