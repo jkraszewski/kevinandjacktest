@@ -1,10 +1,11 @@
 import System.util.Scanner;
 
-private Array[][] board = new Array[2][2];
+
 public class TicTackToe
 {
 	public static void main(String[] args)
 	{
+		String[][] board = new String[3][3];
 		Scanner scan = new Scanner(System.in);
 		int guess;
 		boolean won = false;
@@ -25,13 +26,32 @@ public class TicTackToe
 
 	}
 
-	public void print(Array[][] board)
+	public void print(String[][] board)
 	{
 
 	}
 
-	public void checkBoard(Array[][] board)
+	public void checkBoard(String[][] board)
 	{
+		if(board[0][0].equals(board[0][1]) && board[0][0].equals(board[0][2]))
+		{
+			won = true;
+		}
+		else if(board[1][0].equals(board[1][1]) && board[1][0].equals(board[1][2])
+		{
+			won = true;
+		}
+		else if(board[2][0].equals(board[2][1]) && board[2][0].equals(board[2][2]))
+		{
+			won = true;
+		}
+		else if(board[0][0].equals(board[0][1]) && board[0][0].equals(board[0][2]))
+		{
+			won = true;
+		}
+
+
+
 
 	}
 }
