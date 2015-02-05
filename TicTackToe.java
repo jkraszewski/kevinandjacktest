@@ -26,7 +26,9 @@ public class TicTackToe
 
 	}
 
+
 	public void printThis(String[][] board)
+
 	{
 		for (int i = 0; i < board.length; i++)
 			{
@@ -38,6 +40,25 @@ public class TicTackToe
 
 	public void checkBoard(String[][] board)
 	{
+		if(board[0][0].equals(board[0][1]) && board[0][0].equals(board[0][2]))
+		{
+			won = true;
+		}
+		else if(board[1][0].equals(board[1][1]) && board[1][0].equals(board[1][2])
+		{
+			won = true;
+		}
+		else if(board[2][0].equals(board[2][1]) && board[2][0].equals(board[2][2]))
+		{
+			won = true;
+		}
+		else if(board[0][0].equals(board[0][1]) && board[0][0].equals(board[0][2]))
+		{
+			won = true;
+		}
+
+
+
 
 	}
 }
