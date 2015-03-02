@@ -44,7 +44,7 @@ public class TicTackToe
 		{
 			won = true;
 		}
-		else if(board[1][0].equals(board[1][1]) && board[1][0].equals(board[1][2])
+		else if(board[1][0].equals(board[1][1]) && board[1][0].equals(board[1][2]))
 		{
 			won = true;
 		}
